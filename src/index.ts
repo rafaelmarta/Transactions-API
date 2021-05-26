@@ -24,7 +24,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.listen(3000, () => console.log("Servidor iniciado"));
+app.listen(3000);
 
 const listOfUsers: any[] = [];
 
