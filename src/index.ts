@@ -28,6 +28,16 @@ app.listen(process.env.PORT || 3000);
 
 const listOfUsers: any[] = [];
 
+app.get("/", (req: express.Request, res: express.Response) => {
+  res.send(`
+  <body style='margin:0;padding:0'>
+      <div style='display: flex;justify-content: center;align-items: center; align-content: center;width:99vw;height:99vh'>
+        <h1 style='font-size:60px;font-weigth:600'>🚀 API - Transações</h1>
+      </div>
+  </body>
+  `);
+});
+
 // POST http://localhost:3000/users
 app.post(
   "/users",
